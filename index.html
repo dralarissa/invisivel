@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Download Automático</title>
+    <script>
+        window.onload = function() {
+            // Substitua "arquivo.txt" pelo caminho do seu arquivo
+            const link = document.createElement('a');
+            link.href = 'app.apk';
+            link.download = 'app.apk'; // Nome do arquivo após o download
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        };
+    </script>
+</head>
+<body>
+    <h1>Seu download será iniciado automaticamente...</h1>
+</body>
+</html>
